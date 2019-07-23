@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/astrahive-sales/static/css/main.23507b24.chunk.css",
+    "main.js": "/astrahive-sales/static/js/main.509f1ea4.chunk.js",
+    "main.js.map": "/astrahive-sales/static/js/main.509f1ea4.chunk.js.map",
+    "runtime~main.js": "/astrahive-sales/static/js/runtime~main.f1c15820.js",
+    "runtime~main.js.map": "/astrahive-sales/static/js/runtime~main.f1c15820.js.map",
+    "static/css/2.b449cd6b.chunk.css": "/astrahive-sales/static/css/2.b449cd6b.chunk.css",
+    "static/js/2.d3432ee1.chunk.js": "/astrahive-sales/static/js/2.d3432ee1.chunk.js",
+    "static/js/2.d3432ee1.chunk.js.map": "/astrahive-sales/static/js/2.d3432ee1.chunk.js.map",
+    "index.html": "/astrahive-sales/index.html",
+    "precache-manifest.8f7c4aad2f62ba881132108790471817.js": "/astrahive-sales/precache-manifest.8f7c4aad2f62ba881132108790471817.js",
+    "service-worker.js": "/astrahive-sales/service-worker.js",
+    "static/css/2.b449cd6b.chunk.css.map": "/astrahive-sales/static/css/2.b449cd6b.chunk.css.map",
+    "static/css/main.23507b24.chunk.css.map": "/astrahive-sales/static/css/main.23507b24.chunk.css.map"
+  }
+}
