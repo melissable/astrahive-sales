@@ -59,12 +59,12 @@ class Service5 extends Component {
             className="mt-16 fade-in"
             alignItems="center"
           >
-            <Grid item lg={5} md={7} sm={12} xs={12}>
+            <Grid item lg={6} md={6} sm={12} xs={12}>
               <div className="service5__image-holder">
                 <img className="elevation-3" src={feature.imageUrl} alt="building" />
               </div>
             </Grid>
-            <Grid item lg={5} md={7} sm={12} xs={12}>
+            <Grid item lg={6} md={6} sm={12} xs={12}>
               <div className="service5__details">
                 <h3>{feature.title}</h3>
                 <p>{feature.text}</p>

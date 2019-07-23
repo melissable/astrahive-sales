@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Button, Icon } from "@material-ui/core";
 
-class Footer1 extends Component {
+class Footer extends Component {
   state = {};
   render() {
     return (
@@ -29,14 +29,14 @@ class Footer1 extends Component {
                   <Icon className="footer1__contact__icon">mail</Icon>
                   <div className="pl-16">
                     <h5 className="m-0 p-0">Email</h5>
-                    <p className="m-0 p-0">email@abc.com</p>
+                    <p className="m-0 p-0">info@astrahive.com</p>
                   </div>
                 </div>
                 <div className="px-16 mt-32">
                   <Icon className="footer1__contact__icon">location_on</Icon>
                   <div className="pl-16">
-                    <h5 className="m-0 p-0">Adress</h5>
-                    <p className="m-0 p-0">Topoban, Akhalia Sylhet 3114, BD</p>
+                    <h5 className="m-0 p-0">Address</h5>
+                    <p className="m-0 p-0">Winston-Salem, NC 27101</p>
                   </div>
                 </div>
               </div>
@@ -70,4 +70,4 @@ class Footer1 extends Component {
   }
 }
 
-export default Footer1;
+export default Footer;

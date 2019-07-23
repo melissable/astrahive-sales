@@ -10,7 +10,7 @@ import {
   Divider
 } from "@material-ui/core";
 
-class Pricing1 extends Component {
+class Pricing extends Component {
   pricingList = [
     {
       title: "Developer",
@@ -152,4 +152,4 @@ class Pricing1 extends Component {
   }
 }
 
-export default Pricing1;
+export default Pricing;

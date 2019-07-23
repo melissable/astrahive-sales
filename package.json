@@ -1,7 +1,7 @@
 {
   "name": "astrahive-sales",
   "version": "0.1.0",
-  "homepage": "https://melissa.github.io/astrahive-sales",
+  "homepage": "https://www.astrahive.com/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.3",

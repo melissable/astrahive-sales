@@ -71,16 +71,16 @@ export default class Header extends Component {
                 Features
               </ScrollTo>
             </li>
-            <li>
+            {/* <li>
               <ScrollTo to="pricing1" onScroll={this.close}>
                 Pricing
               </ScrollTo>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <ScrollTo to="contact1" onScroll={this.close}>
                 Contact
               </ScrollTo>
-            </li>
+            </li> */}
           </ul>
           <div className="m-auto" />
           <Fab

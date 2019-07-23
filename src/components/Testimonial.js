@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Card } from "@material-ui/core";
 
-class Testimonial3 extends Component {
+class Testimonial extends Component {
   cardList = [
     {
       title: "Amazed by the product",
@@ -80,4 +80,4 @@ class Testimonial3 extends Component {
   }
 }
 
-export default Testimonial3;
+export default Testimonial;

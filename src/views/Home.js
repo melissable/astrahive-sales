@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { scrollTo } from '../Utils';
 import {
-  CallToAction2,
-  Contact1,
-  Footer1,
+  CallToAction,
+  Contact,
+  Footer,
   Header,
-  Intro3,
-  Pricing1,
+  Intro,
+  Pricing,
   Service3,
   Service4,
   Service5,
   Service6,
   Service7,
-  Testimonial3,
+  Testimonial,
 } from '../components';
 
 export default class Home extends Component {
@@ -24,18 +24,18 @@ export default class Home extends Component {
   render() {
     return (
       <div className="landing">
-        <Header/>
-        <Intro3/>
+        <Header />
+        <Intro/>
         <Service3 />
         <Service4 />
         <Service5 />
         <Service6 />
         <Service7 />
-        <Testimonial3 />
-        <CallToAction2 />
-        <Pricing1 />
-        <Contact1 />
-        <Footer1 />
+        {/* <Testimonial /> */}
+        <CallToAction />
+        {/* <Pricing /> */}
+        <Contact />
+        <Footer />
       </div>
     );
   }

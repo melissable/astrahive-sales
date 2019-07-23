@@ -3,7 +3,7 @@ import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { Fab, Icon } from "@material-ui/core";
 
 
-export default class Contact1 extends Component {
+export default class Contact extends Component {
   state = {
     name: "",
     email: "",
