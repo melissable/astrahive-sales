@@ -55,13 +55,13 @@ export default class Header extends Component {
             <img src="./assets/images/AstraHiveLogo.png" alt="AstraHive Logo" />
           </NavLink>
           <ul className="navigation">
-            <li>
+            {/* <li>
               <ScrollTo to="intro3" onScroll={this.close}>
                 Intro
               </ScrollTo>
-            </li>
+            </li> */}
             
-            <li>
+            {/* <li>
               <ScrollTo to="service3" onScroll={this.close}>
                 Service
               </ScrollTo>
@@ -70,7 +70,7 @@ export default class Header extends Component {
               <ScrollTo to="service5" onScroll={this.close}>
                 Features
               </ScrollTo>
-            </li>
+            </li> */}
             {/* <li>
               <ScrollTo to="pricing1" onScroll={this.close}>
                 Pricing
@@ -83,16 +83,18 @@ export default class Header extends Component {
             </li> */}
           </ul>
           <div className="m-auto" />
-          <Fab
+          {/* <Fab
                   variant="extended"
                   size="medium"
                   color="secondary"
                   aria-label="Buy"
                   className=""
                 >
+                <ScrollTo to="cta2" onScroll={this.close}>
                   <Icon className="mr-16">flight_takeoff</Icon>
                   Sign Up
-                </Fab>
+                  </ScrollTo>
+                </Fab> */}
           <IconButton
             className="header__toggle"
             onClick={() => {

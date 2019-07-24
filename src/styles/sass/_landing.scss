@@ -784,3 +784,8 @@ body {
 //       0 95%      /* bottom left */
 //     ) !important;
 // }
+
+.hiddenMailChimpInput {
+  position: absolute !important;
+  left: -5000px !important;
+}

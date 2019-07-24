@@ -26,15 +26,15 @@ export default class Home extends Component {
       <div className="landing">
         <Header />
         <Intro/>
-        <Service3 />
+        {/* <Service3 />
         <Service4 />
         <Service5 />
         <Service6 />
         <Service7 />
-        {/* <Testimonial /> */}
-        <CallToAction />
+        <Testimonial /> */}
+        {/* <CallToAction /> */}
         {/* <Pricing /> */}
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     );
