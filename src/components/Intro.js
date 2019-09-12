@@ -64,7 +64,15 @@ const steps = [
   {
     selector: '[step="first-step"]',
     content: 'This is my first Step'
-  }
+  },
+  {
+    selector: '[step="second-step"]',
+    content: 'This is my second Step'
+  },
+  {
+    selector: '[step="third-step"]',
+    content: 'This is my third Step'
+  },
 ]
 
 class Intro3 extends Component {
@@ -91,10 +99,10 @@ class Intro3 extends Component {
         <div className="container pt-0">
           <Grid container spacing={24} justify="center">
             <Grid item md={6}>
-              <h1 className="section-intro1__title" step>
+              <h1 className="section-intro1__title" step="first-step">
                 The Dashboard for Creatives
               </h1>
-              <div className="section-intro1__subtitle">
+              <div className="section-intro1__subtitle" step="second-step">
                 Coming Soon -- Sign up to join the Beta Trial
               </div>
               <button onClick={this.openTour}>Clicky</button>
@@ -106,7 +114,7 @@ class Intro3 extends Component {
                 <div className="section-intro1__list__item text-muted">
                   <Icon color="secondary">check</Icon> Syncs to your calendar.
                 </div>
-                <div className="section-intro1__list__item text-muted">
+                <div className="section-intro1__list__item text-muted" step="third-step">
                   <Icon color="secondary">check</Icon> Syncs to your Xero account.
                 </div>
               </div>
