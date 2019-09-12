@@ -3,6 +3,7 @@ import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import Grid from "@material-ui/core/Grid";
 import Icon from "@material-ui/core/Icon";
 import Fab from "@material-ui/core/Fab";
+import Tour from 'reactour';
 
 const url = "https://txable.us5.list-manage.com/subscribe/post?u=71ce0640ca8695b91810cc50a&amp;id=fb306ed87f";
 
@@ -59,20 +60,44 @@ const CustomForm = ({ status, message, onValidated }) => {
   );
 };
 
+const steps = [
+  {
+    selector: '[step="first-step"]',
+    content: 'This is my first Step'
+  }
+]
+
 class Intro3 extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isTourOpen: false
+    }
+    this.closeTour = this.closeTour.bind(this);
+  }
   state = {};
+
+  closeTour = () => {
+    this.setState({ isTourOpen: false });
+  };
+
+  openTour = () => {
+    this.setState({ isTourOpen: true });
+  };
+
   render() {
     return (
       <section className="section section-intro1 section-intro3" id="intro3">
         <div className="container pt-0">
           <Grid container spacing={24} justify="center">
             <Grid item md={6}>
-              <h1 className="section-intro1__title">
+              <h1 className="section-intro1__title" step>
                 The Dashboard for Creatives
               </h1>
               <div className="section-intro1__subtitle">
                 Coming Soon -- Sign up to join the Beta Trial
               </div>
+              <button onClick={this.openTour}>Clicky</button>
 
               <div className="section-intro1__list">
                 <div className="section-intro1__list__item text-muted">
@@ -105,6 +130,11 @@ class Intro3 extends Component {
               </div>
             </Grid>
           </Grid>
+          <Tour
+            steps={steps}
+            isOpen={this.state.isTourOpen}
+            onRequestClose={this.closeTour}
+          />
         </div>
       </section>
     );
