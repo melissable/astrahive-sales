@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { debounce, classList } from "../Utils";
+import { debounce, classList } from "../Helpers";
 import Icon from "@material-ui/core/Icon";
 import Fab from "@material-ui/core/Fab";
 import IconButton from "@material-ui/core/IconButton";
@@ -40,6 +40,7 @@ export default class Header extends Component {
   close = () => {
     this.setState({ isClosed: true });
   };
+  
   render() {
     let toggleIcon = this.state.isClosed ? "menu" : "close";
     return (
@@ -50,17 +51,11 @@ export default class Header extends Component {
           closed: this.state.isClosed
         })}
       >
-        <div className="container header-container">
+        <div className="container header-container navbar-expand-lg">
           <NavLink  to="/" className="brand">
             <img src="./assets/images/AstraHiveLogo.png" alt="AstraHive Logo" />
           </NavLink>
-          <ul className="navigation">
-            {/* <li>
-              <ScrollTo to="intro3" onScroll={this.close}>
-                Intro
-              </ScrollTo>
-            </li> */}
-            
+          <ul className="navigation">            
             {/* <li>
               <ScrollTo to="service3" onScroll={this.close}>
                 Service
@@ -83,18 +78,18 @@ export default class Header extends Component {
             </li> */}
           </ul>
           <div className="m-auto" />
-          {/* <Fab
-                  variant="extended"
-                  size="medium"
-                  color="secondary"
-                  aria-label="Buy"
-                  className=""
-                >
-                <ScrollTo to="cta2" onScroll={this.close}>
-                  <Icon className="mr-16">flight_takeoff</Icon>
-                  Sign Up
-                  </ScrollTo>
-                </Fab> */}
+          <Fab
+            variant="extended"
+            size="large"
+            color="secondary"
+            aria-label="Demo"
+            className="btn-action m-8"
+          >
+            <NavLink to="/demo">
+              {/* <Icon className="mr-16">flight_takeoff</Icon> */}
+              Demo
+            </NavLink>
+          </Fab>
           <IconButton
             className="header__toggle"
             onClick={() => {

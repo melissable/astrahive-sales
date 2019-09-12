@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Button, Icon } from "@material-ui/core";
 
-class Footer extends Component {
+export default class Footer extends Component {
   state = {};
   render() {
     return (
@@ -68,5 +68,3 @@ class Footer extends Component {
     );
   }
 }
-
-export default Footer;

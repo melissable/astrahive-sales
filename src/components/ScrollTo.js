@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { scrollTo } from "../Utils";
+import { scrollTo } from "../Helpers";
 
 class ScrollTo extends Component {
   state = {};
