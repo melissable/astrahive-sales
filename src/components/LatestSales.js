@@ -14,7 +14,8 @@ import {
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-import { palette } from '../theme/palette';
+import { Theme } from '../theme';
+const palette = Theme.palette;
 
 
 
@@ -112,7 +113,8 @@ const LatestSales = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
-
+  console.log(data);
+  console.log(options);
   return (
     <Card
       {...rest}
@@ -132,10 +134,10 @@ const LatestSales = props => {
       <Divider />
       <CardContent>
         <div className={classes.chartContainer}>
-          <Bar
+          {/* <Bar
             data={data}
             options={options}
-          />
+          /> */}
         </div>
       </CardContent>
       <Divider />
