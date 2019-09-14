@@ -25,9 +25,9 @@ import './assets/scss/sass/app.scss';
 
 const browserHistory = createBrowserHistory();
 
-Chart.helpers.extend(Chart.elements.Rectangle.prototype, {
-  draw: chartjs.draw
-});
+// Chart.helpers.extend(Chart.elements.Rectangle.prototype, {
+//   draw: chartjs.draw
+// });
 
 validate.validators = {
   ...validate.validators,

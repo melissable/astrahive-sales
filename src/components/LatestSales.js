@@ -134,10 +134,10 @@ const LatestSales = props => {
       <Divider />
       <CardContent>
         <div className={classes.chartContainer}>
-          {/* <Bar
+          <Bar
             data={data}
             options={options}
-          /> */}
+          />
         </div>
       </CardContent>
       <Divider />
