@@ -27,3 +27,6 @@ export { default as Text } from './Text';
 export { default as ToolTip } from './ToolTip';
 export { default as Topbar } from './Topbar';
 export { default as TourFooter } from './TourFooter';
+export { default as Profile } from './Profile';
+export { default as SidebarNav } from './SidebarNav';
+export { default as UpgradePlan } from './UpgradePlan';
