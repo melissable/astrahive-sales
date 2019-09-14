@@ -21,6 +21,7 @@ export { default as Pricing } from './Pricing';
 export { default as Row } from './Row';
 export { default as Scrollable } from './Scrollable';
 export { default as ScrollTo } from './ScrollTo';
+export { default as SearchInput } from './SearchInput';
 export { default as Section } from './Section';
 export { default as Service3 } from './Service3';
 export { default as Service4 } from './Service4';
