@@ -16,6 +16,7 @@ export { default as Image } from './Image';
 export { default as Intro } from './Intro';
 export { default as LatestOrders } from './LatestOrders';
 export { default as LatestProducts } from './LatestProducts';
+export { default as LatestSales } from './LatestSales';
 export { default as Logo } from './Logo';
 export { default as Pricing } from './Pricing';
 export { default as Row } from './Row';

@@ -7,9 +7,6 @@ import {
   DashboardHeaderComponent2,
   DashboardHeaderComponent3,
   DashboardHeaderComponent4,
-  TotalUsers,
-  TasksProgress,
-  TotalProfit,
   LatestSales,
   UsersByDevice,
   LatestProducts,
@@ -74,7 +71,7 @@ const Dashboard = () => {
           xl={9}
           xs={12}
         >
-          {/* <LatestSales /> */}
+          <LatestSales />
         </Grid>
         <Grid
           item
