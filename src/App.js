@@ -15,10 +15,12 @@ import {
   Home,
   Dashboard,
   UserList,
-  Product,
   ProductList,
   Account,
   Setting,
+  Typography,
+  Icons,
+  SignIn
 } from './views';
 
 import './assets/scss/sass/app.scss';
@@ -66,7 +68,7 @@ function App() {
           <Route
             exact
             path='/products'
-            component={Product}
+            component={ProductList}
           />
           <Route
             exact
@@ -83,6 +85,22 @@ function App() {
             path='/products'
             component={ProductList}
           />
+          <Route
+            exact
+            path='/typography'
+            component={Typography}
+          />
+          <Route
+            exact
+            path='/icons'
+            component={Icons}
+          />
+          <Route
+            exact
+            path='/sign-in'
+            component={SignIn}
+          />
+
           {/* <Route component={Error} /> */}
         </Switch>
       </Router>
