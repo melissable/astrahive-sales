@@ -9,6 +9,7 @@
     "@material-ui/styles": "^4.4.1",
     "chart.js": "^2.8.0",
     "clsx": "^1.0.4",
+    "core-js": "^3.2.1",
     "gh-pages": "^2.0.1",
     "history": "^4.10.0",
     "moment": "^2.24.0",
