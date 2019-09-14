@@ -80,7 +80,7 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          {/* <UsersByDevice /> */}
+          <UsersByDevice />
         </Grid>
         <Grid
           item
