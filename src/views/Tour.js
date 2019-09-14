@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Main = props => {
+const Tour = props => {
   const { children } = props;
 
   const classes = useStyles();
@@ -65,8 +65,8 @@ const Main = props => {
   );
 };
 
-Main.propTypes = {
+Tour.propTypes = {
   children: PropTypes.node
 };
 
-export default Main;
+export default Tour;

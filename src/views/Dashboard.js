@@ -98,7 +98,7 @@ const Dashboard = () => {
           xl={9}
           xs={12}
         >
-          {/* <LatestOrders /> */}
+          <LatestOrders />
         </Grid>
       </Grid>
     </div>

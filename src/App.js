@@ -5,7 +5,7 @@ import { createBrowserHistory } from 'history';
 import { Chart } from 'react-chartjs-2';
 import validate from 'validate.js';
 
-import Theme from './Theme';
+import { Theme } from './theme';
 import { chartjs } from './utils';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import './assets/scss/index.scss';
