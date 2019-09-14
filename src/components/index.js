@@ -6,6 +6,7 @@ export { default as Contact } from './Contact';
 export { default as DashboardHeaderComponent1 } from './DashboardHeaderComponent1';
 export { default as DashboardHeaderComponent2 } from './DashboardHeaderComponent2';
 export { default as DashboardHeaderComponent3 } from './DashboardHeaderComponent3';
+export { default as DashboardHeaderComponent4 } from './DashboardHeaderComponent4';
 // export { default as Demo } from './Demo';
 export { default as Footer } from './Footer';
 export { default as Glitch } from './Glitch';

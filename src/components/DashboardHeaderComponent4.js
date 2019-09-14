@@ -2,19 +2,14 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import {
-  Card,
-  CardContent,
-  Grid,
-  Typography,
-  Avatar,
-  LinearProgress
-} from '@material-ui/core';
-import InsertChartIcon from '@material-ui/icons/InsertChartOutlined';
+import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    height: '100%'
+    height: '100%',
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.primary.contrastText
   },
   content: {
     alignItems: 'center',
@@ -24,29 +19,18 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 700
   },
   avatar: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.white,
+    color: theme.palette.primary.main,
     height: 56,
     width: 56
   },
   icon: {
     height: 32,
     width: 32
-  },
-  difference: {
-    marginTop: theme.spacing(2),
-    display: 'flex',
-    alignItems: 'center'
-  },
-  differenceIcon: {
-    color: theme.palette.error.dark
-  },
-  differenceValue: {
-    color: theme.palette.error.dark,
-    marginRight: theme.spacing(1)
   }
 }));
 
-const DashboardHeaderComponent3 = props => {
+const DashboardHeaderComponent4 = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -64,32 +48,32 @@ const DashboardHeaderComponent3 = props => {
           <Grid item>
             <Typography
               className={classes.title}
-              color="textSecondary"
+              color="inherit"
               gutterBottom
               variant="body2"
             >
-              component three
+              total awesome
             </Typography>
-            <Typography variant="h4">things</Typography>
+            <Typography
+              color="inherit"
+              variant="h3"
+            >
+              7,512
+            </Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <InsertChartIcon className={classes.icon} />
+              <AttachMoneyIcon className={classes.icon} />
             </Avatar>
           </Grid>
         </Grid>
-        <LinearProgress
-          className={classes.progress}
-          value={50.0}
-          variant="determinate"
-        />
       </CardContent>
     </Card>
   );
 };
 
-DashboardHeaderComponent3.propTypes = {
+DashboardHeaderComponent4.propTypes = {
   className: PropTypes.string
 };
 
-export default DashboardHeaderComponent3;
+export default DashboardHeaderComponent4;

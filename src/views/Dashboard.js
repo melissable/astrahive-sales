@@ -6,6 +6,7 @@ import {
   DashboardHeaderComponent1,
   DashboardHeaderComponent2,
   DashboardHeaderComponent3,
+  DashboardHeaderComponent4,
   TotalUsers,
   TasksProgress,
   TotalProfit,
@@ -64,7 +65,7 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          {/* <TotalProfit /> */}
+          <DashboardHeaderComponent4 />
         </Grid>
         <Grid
           item
