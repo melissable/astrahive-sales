@@ -17,7 +17,8 @@ import {
   UserList,
   Product,
   Account,
-  Setting
+  Setting,
+  Typography
 } from './views';
 
 import './assets/scss/sass/app.scss';
@@ -74,6 +75,12 @@ function App() {
             path='/settings'
             component={Setting}
           />
+          <Route
+            exact
+            path='/typography'
+            component={Typography}
+          />
+
           {/* <Route component={Error} /> */}
         </Switch>
       </Router>
