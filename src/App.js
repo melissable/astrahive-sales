@@ -14,7 +14,7 @@ import {
   Tour,
   Home,
   Dashboard,
-  User,
+  UserList,
   Product,
   Account,
   Setting
@@ -57,7 +57,7 @@ function App() {
           <Route
             exact
             path='/users'
-            component={User}
+            component={UserList}
           />
           <Route
             exact

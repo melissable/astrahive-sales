@@ -1,31 +1,41 @@
-import React, { Component } from 'react';
-import { scrollTo } from '../Helpers';
-import {
-  CallToAction,
-  Contact,
-  Footer,
-  Header,
-  Intro,
-  Pricing,
-  Service3,
-  Service4,
-  Service5,
-  Service6,
-  Service7,
-  Testimonial,
-} from '../components';
+import React from 'react';
+import { makeStyles } from '@material-ui/styles';
+import { Grid } from '@material-ui/core';
 
-export default class Setting extends Component {
-  state = {};
-  componentWillUnmount() {
-    scrollTo('root');
+import { Notifications, Password } from '../components';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    padding: theme.spacing(4)
   }
-  
-  render() {
-    return (
-      <div>
-        <h2>Settings</h2>
-      </div>
-    );
-  }
+}));
+
+const Settings = () => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <Grid
+        container
+        spacing={4}
+      >
+        <Grid
+          item
+          md={7}
+          xs={12}
+        >
+          <Notifications />
+        </Grid>
+        <Grid
+          item
+          md={5}
+          xs={12}
+        >
+          <Password />
+        </Grid>
+      </Grid>
+    </div>
+  );
 };
+
+export default Settings;
