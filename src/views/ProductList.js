@@ -20,9 +20,6 @@ import clsx from 'clsx';
 import { SearchInput } from '../components';
 import { productListData as mockData } from '../utils/data';
 
-
-
-
 const useStylesProductsToolbar = makeStyles(theme => ({
   root: {},
   row: {

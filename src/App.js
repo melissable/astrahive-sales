@@ -14,7 +14,11 @@ import {
   Tour,
   Home,
   Dashboard,
-  ProductList
+  UserList,
+  Product,
+  ProductList,
+  Account,
+  Setting,
 } from './views';
 
 import './assets/scss/sass/app.scss';
@@ -50,6 +54,26 @@ function App() {
             exact
             path='/dashboard'
             component={Dashboard}
+          />
+          <Route
+            exact
+            path='/users'
+            component={UserList}
+          />
+          <Route
+            exact
+            path='/products'
+            component={Product}
+          />
+          <Route
+            exact
+            path='/account'
+            component={Account}
+          />
+          <Route
+            exact
+            path='/settings'
+            component={Setting}
           />
           <Route
             exact

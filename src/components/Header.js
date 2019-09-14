@@ -4,6 +4,7 @@ import Fab from "@material-ui/core/Fab";
 import IconButton from "@material-ui/core/IconButton";
 import { NavLink } from "react-router-dom";
 import { debounce, classList } from "../utils/helpers";
+import { themeColors } from '../utils/settings'
 import { ScrollTo } from './';
 
 export default class Header extends Component {
@@ -85,7 +86,7 @@ export default class Header extends Component {
             aria-label="Demo"
             className="btn-action m-8"
           >
-            <NavLink to="/demo">
+            <NavLink to="/demo" className="text-white">
               {/* <Icon className="mr-16">flight_takeoff</Icon> */}
               Demo
             </NavLink>
