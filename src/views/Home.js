@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { scrollTo } from '../Helpers';
 import {
   CallToAction,
   Contact,
@@ -14,6 +13,7 @@ import {
   Service7,
   Testimonial,
 } from '../components';
+import { scrollTo } from '../utils/helpers';
 
 export default class Home extends Component {
   state = {};

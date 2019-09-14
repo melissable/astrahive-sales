@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { debounce, classList } from "../Helpers";
 import Icon from "@material-ui/core/Icon";
 import Fab from "@material-ui/core/Fab";
 import IconButton from "@material-ui/core/IconButton";
 import { NavLink } from "react-router-dom";
+import { debounce, classList } from "../utils/helpers";
 import { ScrollTo } from './';
 
 export default class Header extends Component {
