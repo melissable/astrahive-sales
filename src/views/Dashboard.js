@@ -89,7 +89,7 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          {/* <LatestProducts /> */}
+          <LatestProducts />
         </Grid>
         <Grid
           item

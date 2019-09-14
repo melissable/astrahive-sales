@@ -13,6 +13,7 @@ import validators from './utils/validators';
 import {
   Tour,
   Home,
+  Dashboard
 } from './views';
 
 import './assets/scss/sass/app.scss';
@@ -34,8 +35,21 @@ function App() {
       {/* <Router basename='/react-landing'> */}
       <Router basename='/' history={browserHistory}>
         <Switch>
-          <Route path='/' component={Home} exact />
-          <Route path='/demo' component={Tour} exact />
+          <Route
+            exact
+            path='/'
+            component={Home}
+          />
+          <Route
+            exact
+            path='/demo'
+            component={Tour}
+          />
+          <Route
+            exact
+            path='/dashboard'
+            component={Dashboard}
+          />
           {/* <Route component={Error} /> */}
         </Switch>
       </Router>

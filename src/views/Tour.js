@@ -5,6 +5,7 @@ import { makeStyles, useTheme } from '@material-ui/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import { Sidebar, Topbar, TourFooter } from '../components';
+import { Dashboard } from './';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -57,7 +58,7 @@ const Main = props => {
         variant={isDesktop ? 'persistent' : 'temporary'}
       />
       <main className={classes.content}>
-        {children}
+        <Dashboard />
         <TourFooter />
       </main>
     </div>
