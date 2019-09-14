@@ -15,11 +15,12 @@ import {
   Home,
   Dashboard,
   UserList,
-  Product,
   ProductList,
   Account,
   Setting,
-  Typography
+  Typography,
+  Icons,
+  SignIn
 } from './views';
 
 import './assets/scss/sass/app.scss';
@@ -85,6 +86,16 @@ function App() {
             exact
             path='/typography'
             component={Typography}
+          />
+          <Route
+            exact
+            path='/icons'
+            component={Icons}
+          />
+          <Route
+            exact
+            path='/sign-in'
+            component={SignIn}
           />
 
           {/* <Route component={Error} /> */}
