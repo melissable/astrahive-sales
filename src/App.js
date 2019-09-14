@@ -13,7 +13,11 @@ import validators from './utils/validators';
 import {
   Tour,
   Home,
-  Dashboard
+  Dashboard,
+  User,
+  Product,
+  Account,
+  Setting
 } from './views';
 
 import './assets/scss/sass/app.scss';
@@ -49,6 +53,26 @@ function App() {
             exact
             path='/dashboard'
             component={Dashboard}
+          />
+          <Route
+            exact
+            path='/users'
+            component={User}
+          />
+          <Route
+            exact
+            path='/products'
+            component={Product}
+          />
+          <Route
+            exact
+            path='/account'
+            component={Account}
+          />
+          <Route
+            exact
+            path='/settings'
+            component={Setting}
           />
           {/* <Route component={Error} /> */}
         </Switch>
