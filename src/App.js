@@ -16,8 +16,9 @@ import {
   Dashboard,
   UserList,
   Product,
+  ProductList,
   Account,
-  Setting
+  Setting,
 } from './views';
 
 import './assets/scss/sass/app.scss';
@@ -73,6 +74,11 @@ function App() {
             exact
             path='/settings'
             component={Setting}
+          />
+          <Route
+            exact
+            path='/products'
+            component={ProductList}
           />
           {/* <Route component={Error} /> */}
         </Switch>

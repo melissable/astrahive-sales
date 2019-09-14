@@ -1,17 +1,13 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import indigo from '@material-ui/core/colors/indigo';
-import orange from '@material-ui/core/colors/orange';
-import red from '@material-ui/core/colors/red';
 import { colors } from '@material-ui/core';
+import { themeColors } from '../utils/settings'
 
 const white = '#FFFFFF';
 const black = '#000000';
 
 export const palette = {
   black,
-  white,  
-  // primary: indigo, # original sales page colors, replaced by dashboard colors
-  // secondary: orange,  # original sales page colors, replaced by dashboard colors
+  white,
   //  error: red,  # original sales page colors, replaced by dashboard colors
   primary: {
     contrastText: white,
@@ -22,7 +18,7 @@ export const palette = {
   secondary: {
     contrastText: white,
     dark: colors.blue[900],
-    main: colors.blue['A400'],
+    main: themeColors.brandSecondaryBlue,
     light: colors.blue['A400']
   },
   success: {
@@ -30,6 +26,12 @@ export const palette = {
     dark: colors.green[900],
     main: colors.green[600],
     light: colors.green[400]
+  },  
+  magenta: {
+    contrastText: white,
+    dark: colors.pink[900],
+    main: themeColors.magenta,
+    light: colors.pink[700]
   },
   info: {
     contrastText: white,
@@ -46,7 +48,7 @@ export const palette = {
   error: {
     contrastText: white,
     dark: colors.red[900],
-    main: colors.red[600],
+    main: themeColors.brandDangerRed,
     light: colors.red[400]
   },
   text: {

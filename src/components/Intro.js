@@ -49,7 +49,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         variant="extended"
         size="large"
         color="secondary"
-        aria-label="Buy"
+        aria-label="Subscribe"
         className="btn-action m-8"
         onClick={submit}
       >
