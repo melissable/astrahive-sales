@@ -2,9 +2,15 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import MoneyIcon from '@material-ui/icons/Money';
+import {
+  Card,
+  CardContent,
+  Grid,
+  Typography,
+  Avatar,
+  LinearProgress
+} from '@material-ui/core';
+import InsertChartIcon from '@material-ui/icons/InsertChartOutlined';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -40,7 +46,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const DashboardHeaderComponent1 = props => {
+const DashboardHeaderComponent3 = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -62,38 +68,28 @@ const DashboardHeaderComponent1 = props => {
               gutterBottom
               variant="body2"
             >
-              component one
+              component three
             </Typography>
-            <Typography variant="h4">wow</Typography>
+            <Typography variant="h4">things</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <MoneyIcon className={classes.icon} />
+              <InsertChartIcon className={classes.icon} />
             </Avatar>
           </Grid>
         </Grid>
-        <div className={classes.difference}>
-          <ArrowDownwardIcon className={classes.differenceIcon} />
-          <Typography
-            className={classes.differenceValue}
-            variant="body2"
-          >
-            12% wow
-          </Typography>
-          <Typography
-            className={classes.caption}
-            variant="caption"
-          >
-            Since last month
-          </Typography>
-        </div>
+        <LinearProgress
+          className={classes.progress}
+          value={50.0}
+          variant="determinate"
+        />
       </CardContent>
     </Card>
   );
 };
 
-DashboardHeaderComponent1.propTypes = {
+DashboardHeaderComponent3.propTypes = {
   className: PropTypes.string
 };
 
-export default DashboardHeaderComponent1;
+export default DashboardHeaderComponent3;

@@ -4,6 +4,8 @@ import { Grid } from '@material-ui/core';
 
 import {
   DashboardHeaderComponent1,
+  DashboardHeaderComponent2,
+  DashboardHeaderComponent3,
   TotalUsers,
   TasksProgress,
   TotalProfit,
@@ -44,7 +46,7 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          {/* <TotalUsers /> */}
+          <DashboardHeaderComponent2 />
         </Grid>
         <Grid
           item
@@ -53,7 +55,7 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          {/* <TasksProgress /> */}
+          <DashboardHeaderComponent3 />
         </Grid>
         <Grid
           item

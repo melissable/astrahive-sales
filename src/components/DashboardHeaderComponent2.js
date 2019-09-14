@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import MoneyIcon from '@material-ui/icons/Money';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import PeopleIcon from '@material-ui/icons/People';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const DashboardHeaderComponent1 = props => {
+const DashboardHeaderComponent2 = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -62,23 +62,23 @@ const DashboardHeaderComponent1 = props => {
               gutterBottom
               variant="body2"
             >
-              component one
+              component two
             </Typography>
-            <Typography variant="h4">wow</Typography>
+            <Typography variant="h4">stuff</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <MoneyIcon className={classes.icon} />
+              <PeopleIcon className={classes.icon} />
             </Avatar>
           </Grid>
         </Grid>
         <div className={classes.difference}>
-          <ArrowDownwardIcon className={classes.differenceIcon} />
+          <ArrowUpwardIcon className={classes.differenceIcon} />
           <Typography
             className={classes.differenceValue}
             variant="body2"
           >
-            12% wow
+            16% stuff
           </Typography>
           <Typography
             className={classes.caption}
@@ -92,8 +92,8 @@ const DashboardHeaderComponent1 = props => {
   );
 };
 
-DashboardHeaderComponent1.propTypes = {
+DashboardHeaderComponent2.propTypes = {
   className: PropTypes.string
 };
 
-export default DashboardHeaderComponent1;
+export default DashboardHeaderComponent2;
