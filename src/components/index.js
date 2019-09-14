@@ -3,6 +3,7 @@ export { default as Box } from './Box';
 export { default as CallToAction } from './CallToAction';
 export { default as Carousel } from './Carousel';
 export { default as Contact } from './Contact';
+export { default as DashboardHeaderComponent1 } from './DashboardHeaderComponent1';
 // export { default as Demo } from './Demo';
 export { default as Footer } from './Footer';
 export { default as Glitch } from './Glitch';
