@@ -16,6 +16,7 @@ import {
   Dashboard,
   UserList,
   Product,
+  ProductList,
   Account,
   Setting,
   Typography
@@ -63,7 +64,7 @@ function App() {
           <Route
             exact
             path='/products'
-            component={Product}
+            component={ProductList}
           />
           <Route
             exact
@@ -74,6 +75,11 @@ function App() {
             exact
             path='/settings'
             component={Setting}
+          />
+          <Route
+            exact
+            path='/products'
+            component={ProductList}
           />
           <Route
             exact
