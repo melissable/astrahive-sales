@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { UsersToolbar, UsersTable, Sidebar, Topbar, TourFooter } from '../components';
-import { userList as mockData } from '../utils/data';
+import { LatestSales, Sidebar, Topbar, TourFooter } from '../components';
 
 const useStyles = makeStyles(theme => ({
   root: {
     paddingTop: 50,
-    padding: theme.spacing(3)
+    padding: theme.spacing(4)
   },
   shiftContent: {
     paddingLeft: 240
@@ -21,11 +20,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UserList = props => {
+const Insights = (props) => {
   const { children } = props;
   const classes = useStyles();
 
-  const [users] = useState(mockData);
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'), {
     defaultMatches: true
@@ -42,7 +40,6 @@ const UserList = props => {
   };
 
   const shouldOpenSidebar = isDesktop ? true : openSidebar;
-
   return (
     <div
       className={clsx({
@@ -57,16 +54,17 @@ const UserList = props => {
         variant={isDesktop ? 'persistent' : 'temporary'}
       />
       <main className={classes.content}>
-        <UsersToolbar />
-        <UsersTable users={users} />
+        <div class="hastagify_embed" data-hashtag="hashtags" data-width="600" data-mode="basic">
+          <div>hashtags data by <a href="http://hashtagify.me/">hashtagify.me</a>
+          </div></div><script src="//hashtagify.me/assets/hashtagify/embed.js" type="text/javascript"></script>
         <TourFooter />
       </main>
     </div>
   );
 };
 
-UserList.propTypes = {
+Insights.propTypes = {
   children: PropTypes.node
 };
 
-export default UserList;
+export default Insights;

@@ -19,7 +19,7 @@ import {
   Account,
   Setting,
   Typography,
-  Icons,
+  Insights,
   SignIn
 } from './views';
 
@@ -62,12 +62,12 @@ function App() {
           />
           <Route
             exact
-            path='/users'
+            path='/customers'
             component={UserList}
           />
           <Route
             exact
-            path='/products'
+            path='/orders'
             component={ProductList}
           />
           <Route
@@ -87,13 +87,13 @@ function App() {
           />
           <Route
             exact
-            path='/typography'
+            path='/integrations'
             component={Typography}
           />
           <Route
             exact
-            path='/icons'
-            component={Icons}
+            path='/insights'
+            component={Insights}
           />
           <Route
             exact

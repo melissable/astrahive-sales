@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
   icon: {
     height: 32,
-    width: 32
+    width: 32,
   },
   difference: {
     marginTop: theme.spacing(2),
@@ -43,6 +43,9 @@ const useStyles = makeStyles(theme => ({
   differenceValue: {
     color: theme.palette.error.dark,
     marginRight: theme.spacing(1)
+  },
+  progress: {
+    marginTop: theme.spacing(2),
   }
 }));
 
@@ -68,9 +71,9 @@ const DashboardHeaderComponent3 = props => {
               gutterBottom
               variant="body2"
             >
-              component three
+              New Subscribers
             </Typography>
-            <Typography variant="h4">things</Typography>
+            <Typography variant="h4">44</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -80,7 +83,7 @@ const DashboardHeaderComponent3 = props => {
         </Grid>
         <LinearProgress
           className={classes.progress}
-          value={50.0}
+          value={65.0}
           variant="determinate"
         />
       </CardContent>

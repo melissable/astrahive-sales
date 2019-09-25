@@ -109,7 +109,7 @@ export const userList = [
     },
     email: 'ekaterina.tankova@devias.io',
     phone: '304-428-3097',
-    avatarUrl: '/images/avatars/avatar_3.png',
+    avatarUrl: './assets/images/avatars/avatar_3.png',
     createdAt: 1555016400000
   },
   {
@@ -122,7 +122,7 @@ export const userList = [
       street: '1865  Pleasant Hill Road'
     },
     email: 'cao.yu@devias.io',
-    avatarUrl: '/images/avatars/avatar_4.png',
+    avatarUrl: '/assets/images/avatars/avatar_4.png',
     phone: '712-351-5711',
     createdAt: 1555016400000
   },
@@ -137,7 +137,7 @@ export const userList = [
     },
     email: 'alexa.richardson@devias.io',
     phone: '770-635-2682',
-    avatarUrl: '/images/avatars/avatar_2.png',
+    avatarUrl: '/assets/images/avatars/avatar_2.png',
     createdAt: 1555016400000
   },
   {
@@ -150,7 +150,7 @@ export const userList = [
       street: '4158  Hedge Street'
     },
     email: 'anje.keizer@devias.io',
-    avatarUrl: '/images/avatars/avatar_5.png',
+    avatarUrl: '/assets/images/avatars/avatar_5.png',
     phone: '908-691-3242',
     createdAt: 1554930000000
   },
@@ -165,7 +165,7 @@ export const userList = [
     },
     email: 'clarke.gillebert@devias.io',
     phone: '972-333-4106',
-    avatarUrl: '/images/avatars/avatar_6.png',
+    avatarUrl: '/assets/images/avatars/avatar_6.png',
     createdAt: 1554757200000
   },
   {
@@ -179,7 +179,7 @@ export const userList = [
     },
     email: 'adam.denisov@devias.io',
     phone: '858-602-3409',
-    avatarUrl: '/images/avatars/avatar_1.png',
+    avatarUrl: '/assets/images/avatars/avatar_1.png',
     createdAt: 1554670800000
   },
   {
@@ -192,7 +192,7 @@ export const userList = [
       street: '2188  Armbrester Drive'
     },
     email: 'ava.gregoraci@devias.io',
-    avatarUrl: '/images/avatars/avatar_7.png',
+    avatarUrl: '/assets/images/avatars/avatar_7.png',
     phone: '415-907-2647',
     createdAt: 1554325200000
   },
@@ -207,7 +207,7 @@ export const userList = [
     },
     email: 'emilee.simchenko@devias.io',
     phone: '702-661-1654',
-    avatarUrl: '/images/avatars/avatar_8.png',
+    avatarUrl: '/assets/images/avatars/avatar_8.png',
     createdAt: 1523048400000
   },
   {
@@ -220,7 +220,7 @@ export const userList = [
       street: '3934  Wildrose Lane'
     },
     email: 'kwak.seong.min@devias.io',
-    avatarUrl: '/images/avatars/avatar_9.png',
+    avatarUrl: '/assets/images/avatars/avatar_9.png',
     phone: '313-812-8947'
   },
   {
@@ -234,7 +234,7 @@ export const userList = [
     },
     email: 'merrile.burgett@devias.io',
     phone: '801-301-7894',
-    avatarUrl: '/images/avatars/avatar_10.png',
+    avatarUrl: '/assets/images/avatars/avatar_10.png',
     createdAt: 1522702800000
   }
 ]
@@ -245,7 +245,7 @@ export const userList = [
       title: 'Dropbox',
       description:
         'Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.',
-      imageUrl: '/images/products/product_1.png',
+      imageUrl: '/assets/images/products/product_1.png',
       totalDownloads: '594',
       updatedAt: '27/03/2019'
     },
@@ -254,7 +254,7 @@ export const userList = [
       title: 'Medium Corporation',
       description:
         'Medium is an online publishing platform developed by Evan Williams, and launched in August 2012.',
-      imageUrl: '/images/products/product_2.png',
+      imageUrl: '/assets/images/products/product_2.png',
       totalDownloads: '625',
       createdAt: '31/03/2019'
     },
@@ -263,7 +263,7 @@ export const userList = [
       title: 'Slack',
       description:
         'Slack is a cloud-based set of team collaboration tools and services, founded by Stewart Butterfield.',
-      imageUrl: '/images/products/product_3.png',
+      imageUrl: '/assets/images/products/product_3.png',
       totalDownloads: '857',
       createdAt: '03/04/2019'
     },
@@ -272,7 +272,7 @@ export const userList = [
       title: 'Lyft',
       description:
         'Lyft is an on-demand transportation company based in San Francisco, California.',
-      imageUrl: '/images/products/product_4.png',
+      imageUrl: '/assets/images/products/product_4.png',
       totalDownloads: '406',
       createdAt: '04/04/2019'
     },
@@ -281,7 +281,7 @@ export const userList = [
       title: 'GitHub',
       description:
         'GitHub is a web-based hosting service for version control of code using Git.',
-      imageUrl: '/images/products/product_5.png',
+      imageUrl: '/assets/images/products/product_5.png',
       totalDownloads: '835',
       createdAt: '04/04/2019'
     },
@@ -290,7 +290,7 @@ export const userList = [
       title: 'Squarespace',
       description:
         'Squarespace provides software as a service for website building and hosting. Headquartered in NYC.',
-      imageUrl: '/images/products/product_6.png',
+      imageUrl: '/assets/images/products/product_6.png',
       totalDownloads: '835',
       createdAt: '04/04/2019'
     }

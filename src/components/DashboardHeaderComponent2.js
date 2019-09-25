@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import PeopleIcon from '@material-ui/icons/People';
+import CreditCardIcon from '@material-ui/icons/CreditCard';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -62,13 +62,13 @@ const DashboardHeaderComponent2 = props => {
               gutterBottom
               variant="body2"
             >
-              component two
+              Citi Credit Card Balance
             </Typography>
-            <Typography variant="h4">stuff</Typography>
+            <Typography variant="h4">$2099.42</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <PeopleIcon className={classes.icon} />
+              <CreditCardIcon className={classes.icon} />
             </Avatar>
           </Grid>
         </Grid>
@@ -78,7 +78,7 @@ const DashboardHeaderComponent2 = props => {
             className={classes.differenceValue}
             variant="body2"
           >
-            16% stuff
+            16% higher
           </Typography>
           <Typography
             className={classes.caption}

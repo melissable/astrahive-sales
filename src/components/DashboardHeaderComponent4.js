@@ -52,7 +52,7 @@ const DashboardHeaderComponent4 = props => {
               gutterBottom
               variant="body2"
             >
-              total awesome
+              Total MTD Profit
             </Typography>
             <Typography
               color="inherit"

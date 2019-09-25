@@ -10,7 +10,8 @@ import InputIcon from '@material-ui/icons/Input';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    boxShadow: 'none'
+    boxShadow: 'none',
+    background: 'FFFFFF'
   },
   flexGrow: {
     flexGrow: 1
@@ -33,23 +34,25 @@ const Topbar = props => {
       className={clsx(classes.root, className)}
     >
       <Toolbar>
-        <RouterLink to="/">
-          <img
+        <RouterLink to="/" className="brand text-white">
+          <h4>YourShopNameHere</h4>
+          {/* <img
             alt="Logo"
-            src="/images/logos/logo--white.svg"
-          />
+            src="/assets/images/AstraHiveNewLogo.png"
+            className="logoImg"
+          /> */}
         </RouterLink>
         <div className={classes.flexGrow} />
+        <IconButton color="inherit">
+          <Badge
+            badgeContent={notifications.length}
+            color="primary"
+            variant="dot"
+          >
+            <NotificationsIcon />
+          </Badge>
+        </IconButton>
         <Hidden mdDown>
-          <IconButton color="inherit">
-            <Badge
-              badgeContent={notifications.length}
-              color="primary"
-              variant="dot"
-            >
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
           <IconButton
             className={classes.signOutButton}
             color="inherit"

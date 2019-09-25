@@ -54,7 +54,7 @@ export default class Header extends Component {
       >
         <div className="container header-container navbar-expand-lg">
           <NavLink  to="/" className="brand">
-            <img src="./assets/images/AstraHiveLogo.png" alt="AstraHive Logo" />
+            <img src="./assets/images/AstraHiveNewLogo.png" alt="AstraHive Logo" />
           </NavLink>
           <ul className="navigation">            
             {/* <li>

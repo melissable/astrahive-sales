@@ -24,16 +24,15 @@ const Footer = props => {
         &copy;{' '}
         <Link
           component="a"
-          href="https://devias.io/"
+          href="http://www.astrahive.com/"
           target="_blank"
         >
-          Devias IO
+          AstraHive
         </Link>
         . 2019
       </Typography>
       <Typography variant="caption">
-        Created with love for the environment. By designers and developers who
-        love to work together in offices!
+        This demo is for information purposes only. Any reproduction of the screens, data or components therein are not to be copied or duplicated without express permission of AstraHive.
       </Typography>
     </div>
   );

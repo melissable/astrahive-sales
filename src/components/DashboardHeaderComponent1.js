@@ -62,9 +62,9 @@ const DashboardHeaderComponent1 = props => {
               gutterBottom
               variant="body2"
             >
-              component one
+              Credit Union Checking Balance
             </Typography>
-            <Typography variant="h4">wow</Typography>
+            <Typography variant="h4">$4213.88</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -78,7 +78,7 @@ const DashboardHeaderComponent1 = props => {
             className={classes.differenceValue}
             variant="body2"
           >
-            12% wow
+            12%
           </Typography>
           <Typography
             className={classes.caption}

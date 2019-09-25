@@ -12,7 +12,8 @@ const useStyles = makeStyles(theme => ({
     height: '42px',
     display: 'flex',
     alignItems: 'center',
-    marginTop: theme.spacing(1)
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(2)
   },
   spacer: {
     flexGrow: 1
@@ -39,6 +40,10 @@ const UsersToolbar = props => {
       className={clsx(classes.root, className)}
     >
       <div className={classes.row}>
+        <SearchInput
+          className={classes.searchInput}
+          placeholder="Search user"
+        />
         <span className={classes.spacer} />
         <Button className={classes.importButton}>Import</Button>
         <Button className={classes.exportButton}>Export</Button>
@@ -48,12 +53,6 @@ const UsersToolbar = props => {
         >
           Add user
         </Button>
-      </div>
-      <div className={classes.row}>
-        <SearchInput
-          className={classes.searchInput}
-          placeholder="Search user"
-        />
       </div>
     </div>
   );

@@ -1,61 +1,93 @@
-import React, { Fragment } from 'react';
-import { makeStyles } from '@material-ui/styles';
-import { Grid, Typography as MuiTypography } from '@material-ui/core';
+import React, { Fragment, useState } from 'react';
+import PropTypes from 'prop-types';
+import clsx from 'clsx';
+import { makeStyles, useTheme } from '@material-ui/styles';
+
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
+import { Sidebar, Topbar, TourFooter } from '../components';
+import { HexGrid, Layout, Hexagon, Text, Pattern, Path, Hex } from 'react-hexgrid';
+import '../assets/scss/hex.css';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(4)
+    padding: theme.spacing(4),
+    textAlign: 'center',
+  },
+  shiftContent: {
+    paddingLeft: 240
+  },
+  content: {
+    height: '100%'
   }
 }));
 
-const variants = {
-  h1: 'Nisi euismod ante senectus consequat phasellus ut',
-  h2: 'Nisi euismod ante senectus consequat phasellus ut',
-  h3: 'Nisi euismod ante senectus consequat phasellus ut',
-  h4: 'Nisi euismod ante senectus consequat phasellus ut',
-  h5: 'Nisi euismod ante senectus consequat phasellus ut',
-  h6: 'Nisi euismod ante senectus consequat phasellus ut',
-  subtitle1: 'Leo varius justo aptent arcu urna felis pede nisl',
-  subtitle2: 'Leo varius justo aptent arcu urna felis pede nisl',
-  body1:
-    'Justo proin curabitur dictumst semper auctor, consequat tempor, nostra aenean neque turpis nunc. Leo. Sapien aliquet facilisi turpis, elit facilisi praesent porta metus leo. Dignissim amet dis nec ac integer inceptos erat dis Turpis sodales ad torquent. Dolor, erat convallis.Laoreet velit a fames commodo tristique hendrerit sociosqu rhoncus vel sapien penatibus facilisis faucibus ad. Mus purus vehicula imperdiet tempor lectus, feugiat Sapien erat viverra netus potenti mattis purus turpis. Interdum curabitur potenti tristique. Porta velit dignissim tristique ultrices primis.',
-  body2:
-    'Justo proin curabitur dictumst semper auctor, consequat tempor, nostra aenean neque turpis nunc. Leo. Sapien aliquet facilisi turpis, elit facilisi praesent porta metus leo. Dignissim amet dis nec ac integer inceptos erat dis Turpis sodales ad torquent. Dolor, erat convallis.',
-  caption: 'Accumsan leo pretium conubia ullamcorper.',
-  overline: 'Accumsan leo pretium conubia ullamcorper.',
-  button: 'Vivamus ultrices rutrum fames dictumst'
-};
-
-const Typography = () => {
+const HexagonGrid = props => {
   const classes = useStyles();
+  const { children } = props;
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up('lg'), {
+    defaultMatches: true
+  });
+
+  const [openSidebar, setOpenSidebar] = useState(false);
+
+  const handleSidebarOpen = () => {
+    setOpenSidebar(true);
+  };
+
+  const handleSidebarClose = () => {
+    setOpenSidebar(false);
+  };
+
+  const shouldOpenSidebar = isDesktop ? true : openSidebar;
 
   return (
-    <div className={classes.root}>
-      <Grid
-        container
-        spacing={4}
-      >
-        {Object.keys(variants).map((key, i) => (
-          <Fragment key={i}>
-            <Grid
-              item
-              sm={3}
-              xs={12}
-            >
-              <MuiTypography variant="caption">{key}</MuiTypography>
-            </Grid>
-            <Grid
-              item
-              sm={9}
-              xs={12}
-            >
-              <MuiTypography variant={key}>{variants[key]}</MuiTypography>
-            </Grid>
-          </Fragment>
-        ))}
-      </Grid>
+    <div
+      className={clsx({
+        [classes.root]: true,
+        [classes.shiftContent]: isDesktop
+      })}
+    >
+      <Topbar onSidebarOpen={handleSidebarOpen} />
+      <Sidebar
+        onClose={handleSidebarClose}
+        open={shouldOpenSidebar}
+        variant={isDesktop ? 'persistent' : 'temporary'}
+      />
+      <main className={classes.content}>
+        <HexGrid width={1200} height={800} viewBox="-50 -50 100 100">
+          {/* Grid with manually inserted hexagons */}
+          <Layout size={{ x: 10, y: 10 }} flat={true} spacing={1.1} origin={{ x: 0, y: 0 }}>
+            <Hexagon q={0} r={0} s={0} />
+            {/* Using pattern (defined below) to fill the hexagon */}
+            <Hexagon q={0} r={-1} s={1} fill="pat-1" />
+            <Hexagon q={0} r={1} s={-1} />
+            <Hexagon q={1} r={-1} s={0}>
+              {/* <Text>1, -1, 0</Text> */}
+            </Hexagon>
+            <Hexagon q={1} r={0} s={-1}>
+              {/* <Text>1, 0, -1</Text> */}
+            </Hexagon>
+            {/* Pattern and text */}
+            <Hexagon q={-1} r={1} s={0} fill="pat-2">
+              {/* <Text>-1, 1, 0</Text> */}
+            </Hexagon>
+            <Hexagon q={-1} r={0} s={1} />
+            <Hexagon q={-2} r={0} s={1} />
+            {/* <Path start={new Hex(0, 0, 0)} end={new Hex(-2, 0, 1)} /> */}
+          </Layout>
+          <Pattern id="pat-1" link="http://cat-picture/" />
+          <Pattern id="pat-2" link="http://cat-picture2" />
+        </HexGrid>
+        <TourFooter />
+      </main>
     </div>
   );
 };
 
-export default Typography;
+HexagonGrid.propTypes = {
+  children: PropTypes.node
+};
+
+export default HexagonGrid;

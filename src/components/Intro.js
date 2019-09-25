@@ -97,10 +97,10 @@ class Intro3 extends Component {
     return (
       <section className="section section-intro1 section-intro3" id="intro3">
         <div className="container pt-0">
-          <Grid container spacing={24} justify="center">
+          <Grid container spacing={4} justify="center">
             <Grid item md={6}>
               <h1 className="section-intro1__title" step="first-step">
-                The Dashboard for Creatives
+                The Dashboard App for Bizzy Creatives
               </h1>
               <div className="section-intro1__subtitle" step="second-step">
                 Coming Soon -- Sign up to join the Beta Trial

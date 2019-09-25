@@ -6,7 +6,7 @@ import { Divider, Drawer } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import PeopleIcon from '@material-ui/icons/People';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
-import TextFieldsIcon from '@material-ui/icons/TextFields';
+import SettingsApplicationIcon from '@material-ui/icons/SettingsApplications';
 import ImageIcon from '@material-ui/icons/Image';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import SettingsIcon from '@material-ui/icons/Settings';
@@ -45,33 +45,28 @@ const Sidebar = props => {
   const pages = [
     {
       title: 'Dashboard',
-      href: '/dashboard',
+      href: '/demo',
       icon: <DashboardIcon />
     },
     {
-      title: 'Users',
-      href: '/users',
+      title: 'Insights',
+      href: '/insights',
+      icon: <ImageIcon />
+    },
+    {
+      title: 'Customers',
+      href: '/customers',
       icon: <PeopleIcon />
     },
     {
-      title: 'Products',
-      href: '/products',
+      title: 'Orders',
+      href: '/orders',
       icon: <ShoppingBasketIcon />
     },
     {
-      title: 'Authentication',
-      href: '/sign-in',
-      icon: <LockOpenIcon />
-    },
-    {
-      title: 'Typography',
-      href: '/typography',
-      icon: <TextFieldsIcon />
-    },
-    {
-      title: 'Icons',
-      href: '/icons',
-      icon: <ImageIcon />
+      title: 'Integrations',
+      href: '/integrations',
+      icon: <SettingsApplicationIcon />
     },
     {
       title: 'Account',
@@ -82,7 +77,12 @@ const Sidebar = props => {
       title: 'Settings',
       href: '/settings',
       icon: <SettingsIcon />
-    }
+    },
+    {
+      title: 'Authentication',
+      href: '/sign-in',
+      icon: <LockOpenIcon />
+    },
   ];
 
   return (

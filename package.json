@@ -19,6 +19,7 @@
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
     "react-dynamic-swiper": "^2.0.0",
+    "react-hexgrid": "^1.0.3",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-material-ui-form-validator": "^2.0.8",
     "react-perfect-scrollbar": "^1.5.3",
