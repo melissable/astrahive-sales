@@ -51,7 +51,8 @@ const Sidebar = props => {
     {
       title: 'Insights',
       href: '/insights',
-      icon: <ImageIcon />
+      icon: <ImageIcon />,
+      newstep: "first-step"
     },
     {
       title: 'Customers',
