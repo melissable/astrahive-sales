@@ -5,7 +5,7 @@ export { default as NotFound } from './NotFound';
 export { default as ProductList } from './ProductList';
 export { default as Setting } from './Setting';
 export { default as Tour } from './Tour';
-export { default as Typography } from './Typography';
+export { default as Integrations } from './Integrations';
 export { default as UserList } from './UserList';
 export { default as SignIn } from './SignIn';
 export { default as SignUp } from './SignUp';

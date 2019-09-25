@@ -89,7 +89,7 @@ const Insights = (props) => {
                   fontStyle: 'italic',
                   fontWeight: 'bold',
                   color: randomColor()
-                }}>Futurama</div>
+                }}>customties</div>
               <div style={styles.large}>Etsy</div>
               <div style={styles.large}>Squarespace</div>
               <div style={styles.large}>bespoke</div>

@@ -18,7 +18,7 @@ import {
   ProductList,
   Account,
   Setting,
-  Typography,
+  Integrations,
   Insights,
   SignIn
 } from './views';
@@ -88,7 +88,7 @@ function App() {
           <Route
             exact
             path='/integrations'
-            component={Typography}
+            component={Integrations}
           />
           <Route
             exact

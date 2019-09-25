@@ -32,7 +32,8 @@ const Tour = props => {
     defaultMatches: true
   });
 
-  const [openSidebar, setOpenSidebar] = useState(false);
+  const [openSidebar, setOpenSidebar, isTourOpen] = useState(false);
+
 
   const handleSidebarOpen = () => {
     setOpenSidebar(true);
@@ -40,6 +41,14 @@ const Tour = props => {
 
   const handleSidebarClose = () => {
     setOpenSidebar(false);
+  };
+
+  const closeTour = () => {
+    isTourOpen(false);
+  };
+
+  const openTour = () => {
+    isTourOpen(true);
   };
 
   const shouldOpenSidebar = isDesktop ? true : openSidebar;
