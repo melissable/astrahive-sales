@@ -67,32 +67,32 @@ export const latestOrdersData = [
 export const latestProductsData = [
   {
     id: uuid(),
-    name: 'Dropbox',
-    imageUrl: '/assets/images/products/product_1.png',
+    name: 'Etsy',
+    imageUrl: '/assets/images/products/etsy-logo.png',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
-    name: 'Medium Corporation',
-    imageUrl: '/assets/images/products/product_2.png',
+    name: 'CitiBank',
+    imageUrl: '/assets/images/products/citi.jpg',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
-    name: 'Slack',
-    imageUrl: '/assets/images/products/product_3.png',
+    name: 'Asana',
+    imageUrl: '/assets/images/products/asana.png',
     updatedAt: moment().subtract(3, 'hours')
   },
   {
     id: uuid(),
-    name: 'Lyft',
-    imageUrl: '/assets/images/products/product_4.png',
+    name: 'Pinterest',
+    imageUrl: '/assets/images/products/pinterest.jpg',
     updatedAt: moment().subtract(5, 'hours')
   },
   {
     id: uuid(),
-    name: 'GitHub',
-    imageUrl: '/assets/images/products/product_5.png',
+    name: 'Quickbooks',
+    imageUrl: '/assets/images/products/qb_thumb.png',
     updatedAt: moment().subtract(9, 'hours')
   }
 ];
@@ -242,7 +242,7 @@ export const userList = [
   export const productListData = [
     {
       id: uuid(),
-      title: 'Dropbox',
+      title: 'Etsy',
       description:
         'Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.',
       imageUrl: '/assets/images/products/product_1.png',
