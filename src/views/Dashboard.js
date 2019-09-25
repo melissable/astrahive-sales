@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
@@ -21,6 +21,16 @@ const useStyles = makeStyles(theme => ({
 
 const Dashboard = () => {
   const classes = useStyles();
+
+  const [isTourOpen] = useState(false);
+
+  const closeTour = () => {
+    isTourOpen(false);
+  };
+
+  const openTour = () => {
+    isTourOpen(true);
+  };
 
   return (
     <div className={classes.root}>

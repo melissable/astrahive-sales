@@ -55,7 +55,7 @@ const HexagonGrid = props => {
         open={shouldOpenSidebar}
         variant={isDesktop ? 'persistent' : 'temporary'}
       />
-      <main className={classes.content}>
+      <main className={classes.content, 'hex'}>
         <HexGrid width={1200} height={800} viewBox="-50 -50 100 100">
           {/* Grid with manually inserted hexagons */}
           <Layout size={{ x: 10, y: 10 }} flat={true} spacing={1.1} origin={{ x: 0, y: 0 }}>
