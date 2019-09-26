@@ -32,7 +32,7 @@ const Footer = props => {
         . 2019
       </Typography>
       <Typography variant="caption">
-        This demo is for information purposes only. Any reproduction of the screens, data or components therein are not to be copied or duplicated without express permission of AstraHive.
+        This demo is for informational purposes only. Any reproduction of the screens, data or components therein are not to be copied or duplicated without express permission of AstraHive.
       </Typography>
     </div>
   );

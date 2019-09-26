@@ -12,8 +12,8 @@ export default class Contact extends Component {
   };
 
   handleSubmit = event => {
-    console.log("submitted");
-    console.log(event);
+    // console.log("submitted");
+    // console.log(event);
   };
 
   handleChange = event => {

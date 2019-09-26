@@ -105,8 +105,7 @@ class Intro3 extends Component {
               <div className="section-intro1__subtitle" step="second-step">
                 Coming Soon -- Sign up to join the Beta Trial
               </div>
-              <button onClick={this.openTour}>Clicky</button>
-
+              {/* <button onClick={this.openTour}>Clicky</button> */}
               <div className="section-intro1__list">
                 <div className="section-intro1__list__item text-muted">
                   <Icon color="secondary">check</Icon> Syncs to your Etsy shop.

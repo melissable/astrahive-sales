@@ -113,8 +113,6 @@ const LatestSales = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
-  console.log(data);
-  console.log(options);
   return (
     <Card
       {...rest}

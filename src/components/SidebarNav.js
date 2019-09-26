@@ -62,6 +62,7 @@ const SidebarNav = props => {
           className={classes.item}
           disableGutters
           key={page.title}
+          newstep={page.newstep}
         >
           <Button
             activeClassName={classes.active}
@@ -69,7 +70,7 @@ const SidebarNav = props => {
             component={CustomRouterLink}
             to={page.href}
           >
-            <div className={classes.icon}>{page.icon}</div>
+            <div className={classes.icon} >{page.icon}</div>
             {page.title}
           </Button>
         </ListItem>

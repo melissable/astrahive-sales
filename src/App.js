@@ -11,16 +11,18 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 import './assets/scss/index.scss';
 import validators from './utils/validators';
 import {
+  Budget,
   Tour,
   Home,
   Dashboard,
   UserList,
-  ProductList,
+  Orders,
   Account,
   Setting,
   Integrations,
   Insights,
-  SignIn
+  SignIn,
+  ProductList
 } from './views';
 
 import './assets/scss/sass/app.scss';
@@ -68,7 +70,12 @@ function App() {
           <Route
             exact
             path='/orders'
-            component={ProductList}
+            component={Orders}
+          />
+          <Route
+            exact
+            path='/budget'
+            component={Budget}
           />
           <Route
             exact

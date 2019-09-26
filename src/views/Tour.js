@@ -32,8 +32,7 @@ const Tour = props => {
     defaultMatches: true
   });
 
-  const [openSidebar, setOpenSidebar, isTourOpen] = useState(false);
-
+  const [openSidebar, setOpenSidebar, isTourOpen, setOpenTour] = useState(false);
 
   const handleSidebarOpen = () => {
     setOpenSidebar(true);
@@ -44,12 +43,31 @@ const Tour = props => {
   };
 
   const closeTour = () => {
-    isTourOpen(false);
+    if (isTourOpen) {
+      setOpenTour(false);
+    }
   };
 
   const openTour = () => {
-    isTourOpen(true);
+    if (!isTourOpen) {
+      setOpenTour(true);
+    }
   };
+
+  const steps = [
+    {
+      selector: '[newstep="first-step"]',
+      content: 'This is my first Step'
+    },
+    {
+      selector: '[newstep="second-step"]',
+      content: 'This is my second Step'
+    },
+    {
+      selector: '[newstep="third-step"]',
+      content: 'This is my third Step'
+    },
+  ]
 
   const shouldOpenSidebar = isDesktop ? true : openSidebar;
 
@@ -68,8 +86,14 @@ const Tour = props => {
       />
       <main className={classes.content}>
         <Dashboard />
+        <button onClick={openTour}>Open tour</button>
         <TourFooter />
       </main>
+      {/* <Tour
+        steps={steps}
+        isOpen={isTourOpen}
+        onRequestClose={closeTour}
+      /> */}
     </div>
   );
 };

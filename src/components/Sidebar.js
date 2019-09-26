@@ -51,7 +51,8 @@ const Sidebar = props => {
     {
       title: 'Insights',
       href: '/insights',
-      icon: <ImageIcon />
+      icon: <ImageIcon />,
+      newstep: "first-step"
     },
     {
       title: 'Customers',
@@ -59,8 +60,8 @@ const Sidebar = props => {
       icon: <PeopleIcon />
     },
     {
-      title: 'Orders',
-      href: '/orders',
+      title: 'Budget',
+      href: '/budget',
       icon: <ShoppingBasketIcon />
     },
     {
