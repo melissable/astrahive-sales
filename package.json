@@ -31,7 +31,7 @@
     "recompose": "^0.30.0",
     "reshake": "^1.2.1",
     "styled-components": "^4.3.2",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "underscore": "^1.9.1",
     "uuid": "^3.3.3",
     "validate.js": "^0.13.1"
